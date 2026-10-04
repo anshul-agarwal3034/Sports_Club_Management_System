@@ -1,0 +1,26 @@
+{
+  "name": "champions-club-backend",
+  "version": "1.0.0",
+  "description": "Champions Club Sports Management System - 4-Layer Feature-Based Backend Architecture",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node database/migrate.js",
+    "test": "node tests/auth.test.js && node tests/bookings.test.js && node tests/advanced_workflows.test.js && node tests/setup_and_finance.test.js",
+    "test:auth": "node tests/auth.test.js",
+    "test:bookings": "node tests/bookings.test.js",
+    "test:advanced": "node tests/advanced_workflows.test.js",
+    "test:setup-finance": "node tests/setup_and_finance.test.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.14",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  }
+}
